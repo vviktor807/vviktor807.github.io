@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(243, 189, 89);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    min-width: 100%;
+    margin: 0;
+}
+
+#main-header{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    color: rgb(240, 199, 123);
+    background-image: url(../img/spotlight.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 1em;
+}
+#navbar{
+    background-color: wheat;
+    margin: 0;
+    padding: 0.3em;
+}
