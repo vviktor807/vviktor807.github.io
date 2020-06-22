@@ -59,13 +59,13 @@ body {
     text-align: center;
 }
 
-/*.basic-moves {
+.basic-moves {
     margin: 0;
     min-width: 100%;
-}*/
+}
 
 .left-side {
-    width: 50%;
+    width: 60%;
     float: left;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .right-side {
     float: right;
-    width: 50%;
+    width: 40%;
 }
 
 .basic-moves::after {
