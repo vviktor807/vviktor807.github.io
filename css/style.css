@@ -60,13 +60,12 @@ body {
 }
 
 .basic-moves {
-    margin: 0;
-    min-width: 100%;
+    display: flex;
 }
 
 .left-side {
-    width: 60%;
-    float: left;
+    flex: 2;
+    
 }
 
 .left-side ul {
@@ -74,11 +73,5 @@ body {
 }
 
 .right-side {
-    float: right;
-    width: 40%;
-}
-
-.basic-moves::after {
-    clear: both;
-    display: table;
+    flex: 1;
 }
