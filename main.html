@@ -54,7 +54,8 @@
                     Each type of chess piece has its own method of movement.
                 <ul>
                     <li> The <b>king</b> can move into any directions
-                        (horizontally, vertically, or diagonally) but exactly one square at a time.</li>
+                        (horizontally, vertically, or diagonally) but exactly one square at a time. There is a special
+                        move with the king called <a href="#castling">castling</a>, which is allowed once per game.</li>
                     <li>The <b>rook</b> can move any vacant squares horizontally or vertically.</li>
                     <li>The <b>bishop</b> can move any number of vacant squares diagonally.</li>
                     <li>The <b>queen</b> can move any number of vacant squares horizontally, vertically, or
@@ -78,11 +79,24 @@
                         <li>A pawn can capture an enemy piece on either of the two squares diagonally in front
                             of
                             the
-                            pawn.
+                            pawn. The pawn is involved in two special moves called <i>en passant</i> and
+                            <i>promotion</i>.
                         </li>
                     </ul>
                 </ul>
+                A piece is captured when an attacking enemy piece replaces it on its square. The captured piece is
+                permanently removed from the game. The player controlling the white pieces called <b>"White"</b> the
+                other called <b>"Black"</b>. White moves first, then players alternate moves. Making a move is required;
+                it is not legal to skip a move. Them game continues until a king is checkmated, a player resigns, or a
+                draw
+                is declared. Checkmate is when a king is in check (attacked by an enemy piece) and it can't move from
+                the square without still being in check. Either player may resign at any time and their opponent wins
+                the game. Players typically resign when they believe they are very likely to lose the game. A draw
+                occures when a king is on a square that is not attacked by any enemy piece and has no legal moves(king
+                can't move to a square that is attacked) or there are no pieces on the board that can deliver checkmate
+                (insufficient material).
                 </p>
+                <h3 id="castling">Castling</h3>
             </div>
             <div class="right-side">
                 <img src="img/king_move.JPG" alt="king">

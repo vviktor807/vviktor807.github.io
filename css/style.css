@@ -44,11 +44,12 @@ body {
     text-decoration: none;
     font-size: 18px;
     padding-right: 15px;
-    color: rgb(0, 92, 100);
+    color: rgb(2, 75, 82);
 }
 
 #navbar a:hover {
-    color: darkslateblue;
+    color: rgb(132, 118, 221);
+    text-decoration: underline;
 }
 
 #main-block {
@@ -74,4 +75,13 @@ body {
 
 .right-side {
     flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(211, 40, 40);
 }
