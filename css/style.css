@@ -50,14 +50,35 @@ body {
 #navbar a:hover {
     color: darkslateblue;
 }
+
 #main-block {
     margin: 1rem;
 }
 
-#main-block .setup{
+#main-block .setup {
     text-align: center;
 }
 
-.basic-moves ul{
+/*.basic-moves {
+    margin: 0;
+    min-width: 100%;
+}*/
+
+.left-side {
+    width: 50%;
+    float: left;
+}
+
+.left-side ul {
     list-style-type: square;
+}
+
+.right-side {
+    float: right;
+    width: 50%;
+}
+
+.basic-moves::after {
+    clear: both;
+    display: table;
 }
