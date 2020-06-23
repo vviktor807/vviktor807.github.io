@@ -62,7 +62,6 @@ body {
     display: flex;
 }
 
-
 #box1 .left-side, #box2 .left-side {
     flex: 2;
 }
@@ -75,10 +74,13 @@ body {
     flex: 1;
 }
 
-#box2 .left-side, #box2 .right-side {
+#box2 .left-side, #box2 .right-side, #box1 .right-side {
     border: solid;
+    border-color: black;
+    background-image: url(../img/wooden.jpg);
     text-align: center;
-    margin: 1px;
+    color: wheat;
+    margin: 5px;
 }
 
 #box2 .left-side img {
