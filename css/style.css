@@ -1,7 +1,7 @@
 body {
     min-width: 100%;
     margin: 0;
-    background-color: rgb(241, 195, 110);
+    background-color: rgb(248, 209, 137);
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: rgb(0, 0, 0);
@@ -20,12 +20,10 @@ body {
     color: rgb(240, 199, 123);
     background-image: url(../img/spotlight.jpg);
     background-size: cover;
-    margin: 0;
-    padding: 1em;
 }
 
 #navbar {
-    background-color: wheat;
+    background-color: rgb(246, 219, 168);
     margin: 0;
     padding: 0.2em;
 }
@@ -60,21 +58,31 @@ body {
     text-align: center;
 }
 
-.basic-moves {
+#box1, #box2 {
     display: flex;
 }
 
-.left-side {
+
+#box1 .left-side, #box2 .left-side {
     flex: 2;
-    
 }
 
-.left-side ul {
+#box1 .left-side ul {
     list-style-type: square;
 }
 
-.right-side {
+#box1 .right-side, #box2 .right-side {
     flex: 1;
+}
+
+#box2 .left-side, #box2 .right-side {
+    border: solid;
+    text-align: center;
+    margin: 1px;
+}
+
+#box2 .left-side img {
+    padding: 0px 50px;
 }
 
 a {

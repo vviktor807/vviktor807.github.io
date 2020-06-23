@@ -31,8 +31,9 @@
         <div class="setup">
             <h3>New to chess? Learn the basics now!</h3>
             <p>
-                A chessboard consists of <i>64 squares</i> which can be split into 32 dark and 32 light squares. Both
-                players have the same amount of <i>pieces</i> on the board which is <i>16</i> for each player. One
+                A chessboard consists of <b>64 squares</b> which can be split into 32 dark and 32 light squares. Both
+                players have the same amount of <b>pieces</b> on the board which is <b>16</b> for each player. The rows
+                called <b>ranks</b> and the columns called <b>files</b>. One
                 player
                 has the
                 white pieces, the other the black pieces and the board looks like this:
@@ -48,63 +49,124 @@
                 bottom-left corner should be the A1 square otherwise (if you are playing as black) H8.
             </p>
         </div>
-        <div class="basic-moves">
-            <div class="left-side">
-                <p>
-                    Each type of chess piece has its own method of movement.
-                <ul>
-                    <li> The <b>king</b> can move into any directions
-                        (horizontally, vertically, or diagonally) but exactly one square at a time. There is a special
-                        move with the king called <a href="#castling">castling</a>, which is allowed once per game.</li>
-                    <li>The <b>rook</b> can move any vacant squares horizontally or vertically.</li>
-                    <li>The <b>bishop</b> can move any number of vacant squares diagonally.</li>
-                    <li>The <b>queen</b> can move any number of vacant squares horizontally, vertically, or
-                        diagonally.
-                    </li>
-                    <li>The <b>knight</b> can move two squares vertically and one square horizontally, or two
-                        squares
-                        horizontally
-                        and one square vertically (forming a shape of an "L").</li>
-                    <li><b>Pawns</b> have the most complex rulse of movement:</li>
+        <div id="basic-moves">
+            <div id="box1">
+                <div class="left-side">
+                    <p>
+                        Each type of chess piece has its own method of movement.
                     <ul>
-                        <li>A pawn moves straight forward one square, if that square is vacant. If it has not
-                            yet
-                            moved,
-                            a
-                            pawn also has the option of moving two squares straight forward, provided both
+                        <li> The <b>king</b> can move into any directions
+                            (horizontally, vertically, or diagonally) but exactly one square at a time. There is a
+                            special
+                            move with the king called <a href="#castling">castling</a>, which is allowed once per game.
+                        </li>
+                        <li>The <b>rook</b> can move any vacant squares horizontally or vertically.</li>
+                        <li>The <b>bishop</b> can move any number of vacant squares diagonally.</li>
+                        <li>The <b>queen</b> can move any number of vacant squares horizontally, vertically, or
+                            diagonally.
+                        </li>
+                        <li>The <b>knight</b> can move two squares vertically and one square horizontally, or two
                             squares
-                            are
-                            vacant. Pawns cannot move backwards.
-                        </li>
-                        <li>A pawn can capture an enemy piece on either of the two squares diagonally in front
-                            of
-                            the
-                            pawn. The pawn is involved in two special moves called <i>en passant</i> and
-                            <i>promotion</i>.
-                        </li>
+                            horizontally
+                            and one square vertically (forming a shape of an "L").</li>
+                        <li><b>Pawns</b> have the most complex rulse of movement:</li>
+                        <ul>
+                            <li>A pawn moves straight forward one square, if that square is vacant. If it has not
+                                yet
+                                moved,
+                                a
+                                pawn also has the option of moving two squares straight forward, provided both
+                                squares
+                                are
+                                vacant. Pawns cannot move backwards.
+                            </li>
+                            <li>A pawn can capture an enemy piece on either of the two squares diagonally in front
+                                of
+                                the
+                                pawn. The pawn is involved in two special moves called <a href="#en passant">en
+                                    passant</a>
+                                and
+                                <a href="#promotion">promotion</a>.
+                            </li>
+                        </ul>
                     </ul>
-                </ul>
-                A piece is captured when an attacking enemy piece replaces it on its square. The captured piece is
-                permanently removed from the game. The player controlling the white pieces called <b>"White"</b> the
-                other called <b>"Black"</b>. White moves first, then players alternate moves. Making a move is required;
-                it is not legal to skip a move. Them game continues until a king is checkmated, a player resigns, or a
-                draw
-                is declared. Checkmate is when a king is in check (attacked by an enemy piece) and it can't move from
-                the square without still being in check. Either player may resign at any time and their opponent wins
-                the game. Players typically resign when they believe they are very likely to lose the game. A draw
-                occures when a king is on a square that is not attacked by any enemy piece and has no legal moves(king
-                can't move to a square that is attacked) or there are no pieces on the board that can deliver checkmate
-                (insufficient material).
-                </p>
-                <h3 id="castling">Castling</h3>
+                    A piece is captured when an attacking enemy piece replaces it on its square. The captured piece is
+                    permanently removed from the game. The player controlling the white pieces called <b>"White"</b> the
+                    other called <b>"Black"</b>. White moves first, then players alternate moves. Making a move is
+                    required;
+                    it is not legal to skip a move. The game continues until a king is checkmated, a player resigns, or
+                    a
+                    draw
+                    is declared. <b>Checkmate</b> is when a king is in check (attacked by an enemy piece) and it can't
+                    move
+                    from
+                    the square without still being in check. A player can react to the check by moving the king,
+                    capturing
+                    the attacking piece or blocking it by moving a piece between the king and the attacking piece(except
+                    against a knight since knights cannot be blocked). Either player may <b>resign</b> at any time and
+                    their
+                    opponent wins
+                    the game. Players typically resign when they believe they are very likely to lose the game. A
+                    <b>draw</b>
+                    occures when a king is on a square that is not attacked by any enemy piece and has no legal
+                    moves(king
+                    can't move to a square that is attacked) or there are no pieces on the board that can deliver
+                    checkmate
+                    (insufficient material).
+                    </p>
+                    <h4 id="castling">Castling</h4>
+                    <p>Castling is when you move the king 2 squares towards a rook, then placing the rook on the other
+                        side
+                        of the king, adjecent to it. Castling is permissible if the following conditions are met:
+                    <ul>
+                        <li>There are no pieces between the king and the rook.</li>
+                        <li>The king cannot be in check, nor can the king pass through any square that is under attack
+                            by an
+                            enemy piece, or move to a square that would result in check.</li>
+                        <li>Neither the king nor the rook has previously moved during the game.</li>
+                    </ul>
+                    </p>
+                    <h4 id="en passant">En passant</h4>
+                    <p>
+                        When a pawn advances two squares from its original square and ends the turn adjacent to the
+                        opponent's pawn, it may be captured by that pawn of the opponent's, as if it had moved only one
+                        square forward. This capture is only legal on the opponent's next move immediately following the
+                        first pawn's advance.
+                    </p>
+                    <h4 id="promotion">Promotion</h4>
+                    <p>
+                        If a player advances a pawn to its eighth rank, the pawn is then promoted (converted) to a
+                        queen,
+                        rook, bishop, or knight of the same color at the choice of the player (a queen is usually
+                        chosen).
+                        The choice is not limited to previously captured pieces. Hence it is theoretically possible for
+                        a
+                        player to have up to nine queens or up to ten rooks, bishops, or knights if all of their pawns
+                        are
+                        promoted.
+                    </p>
+                </div>
+                <div class="right-side">
+                    <img src="img/king_move.JPG" alt="king">
+                    <img src="img/rook_move.JPG" alt="rook">
+                    <img src="img/bishop_move.JPG" alt="bishop">
+                    <img src="img/queen_move.JPG" alt="queen">
+                    <img src="img/knight_move.JPG" alt="knight">
+                    <img src="img/pawn_move.JPG" alt="pawn">
+                </div>
             </div>
-            <div class="right-side">
-                <img src="img/king_move.JPG" alt="king">
-                <img src="img/rook_move.JPG" alt="rook">
-                <img src="img/bishop_move.JPG" alt="bishop">
-                <img src="img/queen_move.JPG" alt="queen">
-                <img src="img/knight_move.JPG" alt="knight">
-                <img src="img/pawn_move.JPG" alt="pawn">
+            <div id="box2">
+                <div class="left-side">
+                    <h3>En passant</h3>
+                    <img src="img/en_passant_1.JPG" alt="en_passant_1">
+                    <img src="img/en_passant_2.JPG" alt="en_passant_2">
+                    <img src="img/en_passant_3.JPG" alt="en_passant_3">
+                </div>
+                <div class="right-side">
+                    <h3>Castling</h3>
+                    <img src="img/castling_1.JPG" alt="castling_1">
+                    <img src="img/castling_2.JPG" alt="castling_2">
+                </div>
             </div>
         </div>
     </div>
