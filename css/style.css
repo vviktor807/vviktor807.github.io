@@ -50,6 +50,10 @@ body {
     color: rgb(2, 75, 82);
 }
 
+#main-block {
+    margin: 1em;
+}
+
 #navbar a:hover {
     color: rgb(132, 118, 221);
     text-decoration: underline;
