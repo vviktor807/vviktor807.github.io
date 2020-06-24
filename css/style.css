@@ -1,6 +1,7 @@
 body {
     min-width: 100%;
     margin: 0;
+    padding: 0;
     background-color: rgb(248, 209, 137);
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -12,20 +13,24 @@ body {
     overflow: hidden;
 }
 
-#main-header {
+#main-header, #openings-main-header {
     font-family: 'Staatliches', cursive;
     letter-spacing: 0.1em;
     text-align: center;
     text-shadow: 2px 2px black;
     color: rgb(240, 199, 123);
     background-image: url(../img/spotlight.jpg);
-    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #navbar {
     background-color: rgb(246, 219, 168);
     margin: 0;
     padding: 0.2em;
+    text-shadow: none;
+    text-align: left;
 }
 
 #navbar ul {
@@ -50,31 +55,36 @@ body {
     text-decoration: underline;
 }
 
-#main-block {
-    margin: 1rem;
+#openings-main-block .openings-box1 {
+    margin: 20% 15%;
+    padding: 1em;
+    text-align: center;
+    border: solid;
+    border-color: rgb(209, 125, 16);
 }
 
 #main-block .setup {
+    padding-top: 10%;
     text-align: center;
 }
 
-#box1, #box2 {
+.box1, .box2 {
     display: flex;
 }
 
-#box1 .left-side, #box2 .left-side {
+.box1 .left-side, .box2 .left-side {
     flex: 2;
 }
 
-#box1 .left-side ul {
+.box1 .left-side ul {
     list-style-type: square;
 }
 
-#box1 .right-side, #box2 .right-side {
+.box1 .right-side, .box2 .right-side {
     flex: 1;
 }
 
-#box2 .left-side, #box2 .right-side, #box1 .right-side {
+.box2 .left-side, .box2 .right-side, .box1 .right-side {
     border: solid;
     border-color: black;
     background-image: url(../img/wooden.jpg);
@@ -83,7 +93,7 @@ body {
     margin: 5px;
 }
 
-#box2 .left-side img {
+.box2 .left-side img {
     padding: 0px 50px;
 }
 
