@@ -59,14 +59,6 @@ body {
     text-decoration: underline;
 }
 
-#openings-main-block .openings-box1 {
-    margin: 20% 15%;
-    padding: 1em;
-    text-align: center;
-    border: solid;
-    border-color: rgb(209, 125, 16);
-}
-
 #main-block .setup {
     padding-top: 10%;
     text-align: center;
@@ -101,11 +93,34 @@ body {
     padding: 0px 50px;
 }
 
+#openings-main-block .openings-box1 {
+    text-align: left;
+    color: rgb(2, 65, 90);
+    background-color: rgb(207, 204, 156);
+    border-radius: 5px;
+    margin: 20% 15%;
+    padding: 1px 0;
+}
+
+#caro-kann-defense, #sicilian-defense, #french-defense, #scotch-game, #ruy-lopez, #italian-game {
+    display: flex;
+    border-top: solid rgb(156, 105, 22);
+    padding: 5px;
+}
+
+#caro-kann-defense .left, #sicilian-defense .left, #french-defense .left, #scotch-game .left, #ruy-lopez .left, #italian-game .left {
+    flex: 1;
+}
+
+#caro-kann-defense .right, #sicilian-defense .right, #french-defense .right, #scotch-game .right, #ruy-lopez .right, #italian-game .right {
+    flex: 2;
+}
+
 a {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: rgb(211, 40, 40);
+    color: rgb(209, 119, 15);
 }
